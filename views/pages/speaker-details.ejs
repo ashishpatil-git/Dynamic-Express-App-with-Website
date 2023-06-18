@@ -1,0 +1,32 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-8">
+      <article class="speakerslist maincontent">
+        <h1 class="speakerslist-title"><%= speaker.title%></h1>
+        <div class="speakerslist-name">
+          with
+          <a href="/speakers/<%= speaker.shortname%>">Name<%= speaker.name%></a>
+        </div>
+        <p class="speakerslist-info mt-2">
+          <a href="/speakers/<%= speaker.shortname%>"> </a>
+          <img
+            class="speakerslist-img img-fluid"
+            src="/images/speakers/<%= speaker.shortname%>.jpg"
+            alt="Photo of <%= speaker.name%>"
+          />
+        </p>
+        <p><%- speaker.description%></p>
+        <p>
+          An avid water sports participant, Hillary understands the water in many ways in which
+          others do not, or may not ever have the opportunity. Her goal in creating the CAC exhibit
+          was to share with others the beauty, power, and flow of natural bodies of water throughout
+          the world. In addition to the display, Hilary also hosts a session on Tuesday called Deep
+          Sea Wonders, which combines her love of deep sea diving and snorkeling, with instruction
+          for capturing the beauty of underwater explorations on canvas.
+        </p>
+        <p></p>
+      </article>
+    </div>
+    <aside class="col-md-4"><%- include(`./partials/artwork`)%></aside>
+  </div>
+</div>
